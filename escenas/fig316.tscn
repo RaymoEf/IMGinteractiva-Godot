@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://core.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Captura de pantalla 2021-12-13 222626.png" type="Texture" id=5]
+[ext_resource path="res://escenas/fig316.gd" type="Script" id=7]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="CapturaDePantalla2021-12-13222626" type="Sprite" parent="."]
+position = Vector2( 638.25, 360 )
+scale = Vector2( 1.00983, 1 )
+texture = ExtResource( 5 )
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0, -32 )
