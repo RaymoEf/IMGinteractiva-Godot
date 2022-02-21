@@ -1,64 +1,333 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://segoe-ui-4-cufonfonts/Segoe UI Bold.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://controles.png" type="Texture" id=2]
+[ext_resource path="res://Individual Icons/keyboard_171.png" type="Texture" id=2]
 [ext_resource path="res://tran.gd" type="Script" id=3]
-[ext_resource path="res://cuadrado ss.png" type="Texture" id=4]
+[ext_resource path="res://Individual Icons/keyboard_172.png" type="Texture" id=4]
+[ext_resource path="res://Individual Icons/keyboard_174.png" type="Texture" id=5]
+[ext_resource path="res://Individual Icons/keyboard_72.png" type="Texture" id=6]
+[ext_resource path="res://Individual Icons/keyboard_14.png" type="Texture" id=7]
+[ext_resource path="res://Individual Icons/keyboard_23.png" type="Texture" id=8]
+[ext_resource path="res://Individual Icons/keyboard_103.png" type="Texture" id=9]
+[ext_resource path="res://Individual Icons/keyboard_102.png" type="Texture" id=10]
+[ext_resource path="res://Individual Icons/keyboard_104.png" type="Texture" id=11]
+[ext_resource path="res://Individual Icons/keyboard_147.png" type="Texture" id=12]
+[ext_resource path="res://Individual Icons/keyboard_24.png" type="Texture" id=13]
+[ext_resource path="res://Individual Icons/keyboard_73.png" type="Texture" id=14]
+[ext_resource path="res://Individual Icons/keyboard_25.png" type="Texture" id=15]
+[ext_resource path="res://Individual Icons/keyboard_173.png" type="Texture" id=16]
+[ext_resource path="res://Individual Icons/keyboard_125.png" type="Texture" id=17]
+[ext_resource path="res://Individual Icons/keyboard_126.png" type="Texture" id=18]
+[ext_resource path="res://Individual Icons/keyboard_70.png" type="Texture" id=19]
+[ext_resource path="res://Individual Icons/keyboard_124.png" type="Texture" id=20]
+[ext_resource path="res://Individual Icons/keyboard_71.png" type="Texture" id=21]
+[ext_resource path="res://Individual Icons/keyboard_46.png" type="Texture" id=22]
+[ext_resource path="res://Individual Icons/keyboard_1.png" type="Texture" id=23]
+[ext_resource path="res://Individual Icons/keyboard_2.png" type="Texture" id=24]
+[ext_resource path="res://Individual Icons/keyboard_3.png" type="Texture" id=25]
+[ext_resource path="res://Individual Icons/keyboard_115.png" type="Texture" id=26]
+[ext_resource path="res://mouse.png" type="Texture" id=27]
+[ext_resource path="res://telefono.png" type="Texture" id=28]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
 font_data = ExtResource( 1 )
 
+[sub_resource type="DynamicFont" id=2]
+size = 35
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=3]
+default_font = SubResource( 2 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 13 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 15 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ ExtResource( 21 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ ExtResource( 14 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=12]
+animations = [ {
+"frames": [ ExtResource( 22 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=13]
+animations = [ {
+"frames": [ ExtResource( 23 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=14]
+animations = [ {
+"frames": [ ExtResource( 25 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ ExtResource( 24 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
-target = "res://escenas/fig316.tscn"
+target = "res://escenas/fig327.tscn"
 
 [node name="ColorRect" type="ColorRect" parent="."]
-modulate = Color( 0.635294, 0.690196, 0.670588, 1 )
 margin_right = 1312.0
 margin_bottom = 736.0
+color = Color( 0.298039, 0.337255, 0.34902, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Controles" type="Sprite" parent="."]
-position = Vector2( 648, 352 )
-scale = Vector2( 0.8125, 0.8125 )
-texture = ExtResource( 2 )
+[node name="Mouse" type="Sprite" parent="ColorRect"]
+position = Vector2( 334.375, 413.438 )
+scale = Vector2( 0.525132, 0.525132 )
+texture = ExtResource( 27 )
+
+[node name="Telefono" type="Sprite" parent="ColorRect"]
+position = Vector2( 504, 624 )
+scale = Vector2( 1.86585, 1.86585 )
+texture = ExtResource( 28 )
 
 [node name="Button" type="Button" parent="."]
-margin_left = 888.0
-margin_top = 592.0
-margin_right = 1032.0
-margin_bottom = 640.0
+margin_left = 1056.0
+margin_top = 624.0
+margin_right = 1200.0
+margin_bottom = 672.0
 custom_fonts/font = SubResource( 1 )
 text = "CERRAR"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CuadradoSs" type="Sprite" parent="."]
-modulate = Color( 0.635294, 0.690196, 0.670588, 1 )
-position = Vector2( 736, 680 )
-scale = Vector2( 1, 0.0644532 )
-texture = ExtResource( 4 )
-
-[node name="CuadradoSs2" type="Sprite" parent="."]
-modulate = Color( 0.635294, 0.690196, 0.670588, 1 )
-position = Vector2( 224, 336.5 )
-scale = Vector2( 0.078125, 0.610352 )
-texture = ExtResource( 4 )
-
-[node name="CuadradoSs3" type="Sprite" parent="."]
-modulate = Color( 0.635294, 0.690196, 0.670588, 1 )
-position = Vector2( 700, 32 )
-scale = Vector2( 0.882813, 0.0629883 )
-texture = ExtResource( 4 )
-
 [node name="Timer" type="Timer" parent="."]
 wait_time = 15.0
 one_shot = true
 autostart = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 200.0
+margin_top = 80.0
+margin_right = 336.0
+margin_bottom = 139.0
+theme = SubResource( 3 )
+text = "ZOOM:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+margin_left = 880.0
+margin_top = 80.0
+margin_right = 1136.0
+margin_bottom = 139.0
+theme = SubResource( 3 )
+text = "MOVIMIENTO:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 248.0
+margin_top = 264.0
+margin_right = 288.0
+margin_bottom = 312.0
+theme = SubResource( 3 )
+text = "Ó"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+margin_left = 984.0
+margin_top = 304.0
+margin_right = 1024.0
+margin_bottom = 352.0
+theme = SubResource( 3 )
+text = "Ó"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 224.0
+margin_top = 376.0
+margin_right = 264.0
+margin_bottom = 424.0
+theme = SubResource( 3 )
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="."]
+margin_left = 400.0
+margin_top = 368.0
+margin_right = 624.0
+margin_bottom = 472.0
+theme = SubResource( 3 )
+text = "Rueda arriba
+Rueda abajo"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="."]
+margin_left = 104.0
+margin_top = 568.0
+margin_right = 440.0
+margin_bottom = 672.0
+theme = SubResource( 3 )
+text = "Intercambiar modo touch/PC:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Keyboard115" type="AnimatedSprite" parent="."]
+position = Vector2( 992, 168 )
+scale = Vector2( 2.5, 2.5 )
+frames = SubResource( 4 )
+frame = 1
+playing = true
+
+[node name="Keyboard124" type="AnimatedSprite" parent="Keyboard115"]
+position = Vector2( -32, 28.8 )
+frames = SubResource( 5 )
+frame = 1
+playing = true
+
+[node name="Keyboard125" type="AnimatedSprite" parent="Keyboard115"]
+position = Vector2( 3.05176e-05, 28.8 )
+frames = SubResource( 6 )
+frame = 1
+playing = true
+
+[node name="Keyboard126" type="AnimatedSprite" parent="Keyboard115"]
+position = Vector2( 32, 28.8 )
+frames = SubResource( 7 )
+frame = 1
+playing = true
+
+[node name="Keyboard70" type="AnimatedSprite" parent="Keyboard115"]
+position = Vector2( 3.19998, 89.6 )
+frames = SubResource( 8 )
+frame = 1
+playing = true
+
+[node name="Keyboard71" type="AnimatedSprite" parent="Keyboard115/Keyboard70"]
+position = Vector2( 0, 28.8 )
+frames = SubResource( 9 )
+frame = 1
+playing = true
+
+[node name="Keyboard72" type="AnimatedSprite" parent="Keyboard115/Keyboard70/Keyboard71"]
+position = Vector2( 32, 0 )
+frames = SubResource( 10 )
+frame = 1
+playing = true
+
+[node name="Keyboard73" type="AnimatedSprite" parent="Keyboard115/Keyboard70/Keyboard71/Keyboard72"]
+position = Vector2( -64, 0 )
+frames = SubResource( 11 )
+frame = 1
+playing = true
+
+[node name="Keyboard46" type="AnimatedSprite" parent="."]
+position = Vector2( 120, 400 )
+scale = Vector2( 2.5, 2.5 )
+frames = SubResource( 12 )
+frame = 1
+playing = true
+
+[node name="Keyboard1" type="AnimatedSprite" parent="."]
+position = Vector2( 152, 176 )
+scale = Vector2( 2.5, 2.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="Keyboard3" type="AnimatedSprite" parent="."]
+position = Vector2( 368, 176 )
+scale = Vector2( 2.5, 2.5 )
+frames = SubResource( 14 )
+frame = 1
+playing = true
+
+[node name="Keyboard2" type="AnimatedSprite" parent="."]
+position = Vector2( 264, 176 )
+scale = Vector2( 2.5, 2.5 )
+frames = SubResource( 15 )
+frame = 1
+playing = true
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

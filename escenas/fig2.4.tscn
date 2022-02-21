@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://core.tscn" type="PackedScene" id=1]
+[ext_resource path="res://cuadrado ss.png" type="Texture" id=2]
+[ext_resource path="res://img/fig2.4.png" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Fig24" type="Sprite" parent="."]
+position = Vector2( 644, 365 )
+scale = Vector2( 0.671583, 0.671583 )
+texture = ExtResource( 3 )
+
+[node name="CuadradoSs" type="Sprite" parent="Fig24"]
+modulate = Color( 0.905882, 0.905882, 0.905882, 1 )
+position = Vector2( -874.054, -332.051 )
+scale = Vector2( 0.138868, 0.290824 )
+texture = ExtResource( 2 )
+
+[node name="Node2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 3, 15 )

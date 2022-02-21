@@ -1,6 +1,9 @@
 extends Node2D
 
 export(String, FILE, "*.tscn") var target
+
+var num = 0
+var com = 0
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -12,8 +15,11 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	num+=1
+	com=num/delta
+	print(com)
+	pass
 
 
 func _on_Button_pressed():
@@ -36,3 +42,27 @@ func _on_Button3_pressed():
 
 func _on_TouchScreenButton2_pressed():
 	Transitions.fade_out(self, target, 1.5, Color.black)
+
+
+func _on_Button5_pressed():
+	if Input.is_action_pressed("ctrl"):
+		var camera = get_node("Camera2D")
+		var zoom = camera.get_zoom()
+		if(zoom[0]>0.5):
+			zoom[0]-=0.1
+			zoom[1]-=0.1
+			var pos = get_global_mouse_position()
+			camera.zoom=zoom
+			camera.position=pos
+
+
+func _on_Button6_pressed():
+	if Input.is_action_pressed("ctrl"):
+		var camera = get_node("Camera2D")
+		var zoom = camera.get_zoom()
+		if(zoom[0]<1.0):
+			zoom[0]+=0.1
+			zoom[1]+=0.1
+			var pos = get_global_mouse_position()
+			camera.zoom=zoom
+			camera.position=pos

@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://practica6.png" type="Texture" id=1]
 [ext_resource path="res://core.tscn" type="PackedScene" id=2]
+[ext_resource path="res://escenas/fig314.gd" type="Script" id=4]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
 
 [node name="Practica6" type="Sprite" parent="."]
-position = Vector2( 640, 357 )
+position = Vector2( 639, 357 )
 scale = Vector2( 1.00708, 1.01397 )
 texture = ExtResource( 1 )
 

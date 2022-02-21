@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://Camera2D.gd" type="Script" id=2]
 [ext_resource path="res://telefono.png" type="Texture" id=3]
 [ext_resource path="res://icons8-información-64.png" type="Texture" id=4]
+[ext_resource path="res://Archvos extra papime(2)/Sin título-1 1.png" type="Texture" id=5]
 
 [sub_resource type="InputEventAction" id=1]
 action = "uno"
@@ -26,6 +27,18 @@ shortcut = SubResource( 5 )
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 28, 40 )
+
+[sub_resource type="InputEventAction" id=8]
+action = "mas"
+
+[sub_resource type="ShortCut" id=9]
+shortcut = SubResource( 8 )
+
+[sub_resource type="InputEventAction" id=10]
+action = "menos"
+
+[sub_resource type="ShortCut" id=11]
+shortcut = SubResource( 10 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -88,16 +101,41 @@ __meta__ = {
 }
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="."]
-position = Vector2( 40, 40 )
+position = Vector2( 37.0001, 23 )
 scale = Vector2( 1.17073, 1.08 )
 normal = ExtResource( 3 )
 shape = SubResource( 7 )
 
 [node name="TouchScreenButton2" type="TouchScreenButton" parent="."]
-position = Vector2( 26.9661, 144 )
+position = Vector2( 23, 124 )
 scale = Vector2( 1.17073, 1.08 )
 normal = ExtResource( 4 )
 shape = SubResource( 7 )
+
+[node name="SinTítulo-11" type="Sprite" parent="TouchScreenButton2"]
+position = Vector2( 80.5054, 509.431 )
+scale = Vector2( 0.298598, 0.298598 )
+texture = ExtResource( 5 )
+
+[node name="Button5" type="Button" parent="."]
+margin_left = 371.0
+margin_top = -152.0
+margin_right = 383.0
+margin_bottom = -132.0
+shortcut = SubResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button6" type="Button" parent="."]
+margin_left = 566.0
+margin_top = -133.0
+margin_right = 578.0
+margin_bottom = -113.0
+shortcut = SubResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
@@ -105,3 +143,5 @@ shape = SubResource( 7 )
 [connection signal="pressed" from="Button4" to="Camera2D" method="_on_Button4_pressed"]
 [connection signal="pressed" from="TouchScreenButton" to="Camera2D" method="_on_TouchScreenButton_pressed"]
 [connection signal="pressed" from="TouchScreenButton2" to="." method="_on_TouchScreenButton2_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_Button6_pressed"]

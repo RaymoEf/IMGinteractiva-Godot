@@ -1,0 +1,250 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://cuadrado ss.png" type="Texture" id=2]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://segoe-ui-4-cufonfonts/SEGOEUI.TTF"
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+use_mipmaps = true
+use_filter = true
+font_data = SubResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 0.905882, 0.905882, 0.905882, 1 )
+margin_left = -38.0
+margin_top = -45.0
+margin_right = 1338.0
+margin_bottom = 749.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PoolVector2Array( 264, 336, 320, 336, 320, 608.456, 320, 624, 360, 624, 320, 624, 320, 314, 320, 76.9776, 320, 56, 360, 56 )
+width = 5.0
+
+[node name="Line2D2" type="Line2D" parent="."]
+position = Vector2( 295, -204 )
+points = PoolVector2Array( 264, 336, 320, 336, 321, 404, 321, 428, 345, 428, 321, 428, 321, 404, 321, 340, 321, 332, 321, 316, 321, 340, 321, 244, 345, 244 )
+width = 5.0
+antialiased = true
+
+[node name="Line2D4" type="Line2D" parent="."]
+position = Vector2( 295, 208 )
+points = PoolVector2Array( 264, 336, 320, 336, 321, 404, 321, 428, 345, 428, 321, 428, 321, 404, 321, 340, 321, 332, 321, 316, 321, 340, 321, 244, 345, 244 )
+width = 5.0
+antialiased = true
+
+[node name="Line2D5" type="Line2D" parent="."]
+position = Vector2( 295, -6 )
+points = PoolVector2Array( 264, 336, 320, 336, 321, 382, 321, 382, 321, 390, 321, 406, 345, 406, 321, 406, 321, 404, 321, 340, 321, 332, 321, 316, 321, 340, 321, 278, 345, 278 )
+width = 5.0
+antialiased = true
+
+[node name="CuadradoSs" type="Sprite" parent="."]
+modulate = Color( 0.0901961, 0.376471, 0.537255, 1 )
+position = Vector2( 153.773, 333.833 )
+scale = Vector2( 0.253463, 0.120767 )
+texture = ExtResource( 2 )
+
+[node name="CuadradoSs5" type="Sprite" parent="."]
+modulate = Color( 0.0901961, 0.376471, 0.537255, 1 )
+position = Vector2( 928, 80 )
+scale = Vector2( 0.384544, 0.0447585 )
+texture = ExtResource( 2 )
+
+[node name="CuadradoSs6" type="Sprite" parent="."]
+modulate = Color( 0.0901961, 0.376471, 0.537255, 1 )
+position = Vector2( 928, 136 )
+scale = Vector2( 0.384544, 0.0447585 )
+texture = ExtResource( 2 )
+
+[node name="CuadradoSs7" type="Sprite" parent="."]
+modulate = Color( 0.0901961, 0.376471, 0.537255, 1 )
+position = Vector2( 928, 192 )
+scale = Vector2( 0.384544, 0.0447585 )
+texture = ExtResource( 2 )
+
+[node name="CuadradoSs10" type="Sprite" parent="."]
+modulate = Color( 0.0901961, 0.376471, 0.537255, 1 )
+position = Vector2( 928, 488 )
+scale = Vector2( 0.384544, 0.0447585 )
+texture = ExtResource( 2 )
+
+[node name="CuadradoSs11" type="Sprite" parent="."]
+modulate = Color( 0.0901961, 0.376471, 0.537255, 1 )
+position = Vector2( 928, 544 )
+scale = Vector2( 0.384544, 0.0447585 )
+texture = ExtResource( 2 )
+
+[node name="CuadradoSs12" type="Sprite" parent="."]
+modulate = Color( 0.0901961, 0.376471, 0.537255, 1 )
+position = Vector2( 928, 600 )
+scale = Vector2( 0.384544, 0.0447585 )
+texture = ExtResource( 2 )
+
+[node name="CuadradoSs8" type="Sprite" parent="."]
+modulate = Color( 0.0901961, 0.376471, 0.537255, 1 )
+position = Vector2( 928, 312 )
+scale = Vector2( 0.384544, 0.0447585 )
+texture = ExtResource( 2 )
+
+[node name="CuadradoSs9" type="Sprite" parent="."]
+modulate = Color( 0.0901961, 0.376471, 0.537255, 1 )
+position = Vector2( 928, 368 )
+scale = Vector2( 0.384544, 0.0447585 )
+texture = ExtResource( 2 )
+
+[node name="CuadradoSs2" type="Sprite" parent="."]
+modulate = Color( 0.843137, 0.654902, 0.0823529, 1 )
+position = Vector2( 456, 136 )
+scale = Vector2( 0.187278, 0.0892321 )
+texture = ExtResource( 2 )
+
+[node name="CuadradoSs3" type="Sprite" parent="."]
+modulate = Color( 0.843137, 0.654902, 0.0823529, 1 )
+position = Vector2( 456, 344 )
+scale = Vector2( 0.187278, 0.0892321 )
+texture = ExtResource( 2 )
+
+[node name="CuadradoSs4" type="Sprite" parent="."]
+modulate = Color( 0.843137, 0.654902, 0.0823529, 1 )
+position = Vector2( 456, 544 )
+scale = Vector2( 0.187278, 0.0892321 )
+texture = ExtResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 41.773
+margin_top = 296.833
+margin_right = 253.773
+margin_bottom = 374.833
+custom_fonts/normal_font = SubResource( 2 )
+text = "Guión general de pruebas"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 376.0
+margin_top = 96.0
+margin_right = 528.0
+margin_bottom = 174.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Historia de Usuario 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 376.0
+margin_top = 312.0
+margin_right = 528.0
+margin_bottom = 390.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Historia de Usuario 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+margin_left = 376.0
+margin_top = 504.0
+margin_right = 544.0
+margin_bottom = 582.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Historia de Usuario 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+margin_left = 808.0
+margin_top = 57.0
+margin_right = 1040.0
+margin_bottom = 104.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Caso de prueba 1.1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="."]
+margin_left = 808.0
+margin_top = 115.0
+margin_right = 1040.0
+margin_bottom = 162.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Caso de prueba 1.2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel7" type="RichTextLabel" parent="."]
+margin_left = 808.0
+margin_top = 173.0
+margin_right = 1040.0
+margin_bottom = 220.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Caso de prueba 1.3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="."]
+margin_left = 808.0
+margin_top = 291.0
+margin_right = 1040.0
+margin_bottom = 338.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Caso de prueba 2.1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel9" type="RichTextLabel" parent="."]
+margin_left = 808.0
+margin_top = 350.0
+margin_right = 1040.0
+margin_bottom = 397.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Caso de prueba 2.2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel10" type="RichTextLabel" parent="."]
+margin_left = 808.0
+margin_top = 470.0
+margin_right = 1040.0
+margin_bottom = 517.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Caso de prueba 3.1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel11" type="RichTextLabel" parent="."]
+margin_left = 808.0
+margin_top = 525.0
+margin_right = 1040.0
+margin_bottom = 572.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Caso de prueba 3.2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel12" type="RichTextLabel" parent="."]
+margin_left = 808.0
+margin_top = 580.0
+margin_right = 1040.0
+margin_bottom = 627.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Caso de prueba 3.3"
+__meta__ = {
+"_edit_use_anchors_": false
+}

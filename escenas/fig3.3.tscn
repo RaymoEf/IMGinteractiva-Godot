@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://core.tscn" type="PackedScene" id=1]
+[ext_resource path="res://img/fig33.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Fig33" type="Sprite" parent="."]
+position = Vector2( 641.444, 359.5 )
+scale = Vector2( 0.662963, 0.678704 )
+texture = ExtResource( 2 )
+
+[node name="Node2D" parent="." instance=ExtResource( 1 )]

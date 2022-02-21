@@ -8,9 +8,9 @@
 script = ExtResource( 7 )
 
 [node name="CapturaDePantalla2021-12-13222626" type="Sprite" parent="."]
-position = Vector2( 638.25, 360 )
-scale = Vector2( 1.00983, 1 )
+position = Vector2( 640, 343.25 )
+scale = Vector2( 1.00983, 1.04672 )
 texture = ExtResource( 5 )
 
 [node name="Node2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 0, -32 )
+position = Vector2( -18, -14 )
