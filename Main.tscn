@@ -256,77 +256,65 @@ __meta__ = {
 position = Vector2( 992, 168 )
 scale = Vector2( 2.5, 2.5 )
 frames = SubResource( 4 )
-frame = 1
 playing = true
 
 [node name="Keyboard124" type="AnimatedSprite" parent="Keyboard115"]
 position = Vector2( -32, 28.8 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="Keyboard125" type="AnimatedSprite" parent="Keyboard115"]
 position = Vector2( 3.05176e-05, 28.8 )
 frames = SubResource( 6 )
-frame = 1
 playing = true
 
 [node name="Keyboard126" type="AnimatedSprite" parent="Keyboard115"]
 position = Vector2( 32, 28.8 )
 frames = SubResource( 7 )
-frame = 1
 playing = true
 
 [node name="Keyboard70" type="AnimatedSprite" parent="Keyboard115"]
 position = Vector2( 3.19998, 89.6 )
 frames = SubResource( 8 )
-frame = 1
 playing = true
 
 [node name="Keyboard71" type="AnimatedSprite" parent="Keyboard115/Keyboard70"]
 position = Vector2( 0, 28.8 )
 frames = SubResource( 9 )
-frame = 1
 playing = true
 
 [node name="Keyboard72" type="AnimatedSprite" parent="Keyboard115/Keyboard70/Keyboard71"]
 position = Vector2( 32, 0 )
 frames = SubResource( 10 )
-frame = 1
 playing = true
 
 [node name="Keyboard73" type="AnimatedSprite" parent="Keyboard115/Keyboard70/Keyboard71/Keyboard72"]
 position = Vector2( -64, 0 )
 frames = SubResource( 11 )
-frame = 1
 playing = true
 
 [node name="Keyboard46" type="AnimatedSprite" parent="."]
 position = Vector2( 120, 400 )
 scale = Vector2( 2.5, 2.5 )
 frames = SubResource( 12 )
-frame = 1
 playing = true
 
 [node name="Keyboard1" type="AnimatedSprite" parent="."]
 position = Vector2( 152, 176 )
 scale = Vector2( 2.5, 2.5 )
 frames = SubResource( 13 )
-frame = 1
 playing = true
 
 [node name="Keyboard3" type="AnimatedSprite" parent="."]
 position = Vector2( 368, 176 )
 scale = Vector2( 2.5, 2.5 )
 frames = SubResource( 14 )
-frame = 1
 playing = true
 
 [node name="Keyboard2" type="AnimatedSprite" parent="."]
 position = Vector2( 264, 176 )
 scale = Vector2( 2.5, 2.5 )
 frames = SubResource( 15 )
-frame = 1
 playing = true
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

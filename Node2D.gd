@@ -1,6 +1,6 @@
 extends Node2D
 
-export(String, FILE, "*.tscn") var target
+export(String, FILE, "*.tscn") var target #variable que guarrda la escena main, para cambiarr de escena
 
 var num = 0
 var com = 0
@@ -16,11 +16,9 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	num+=1
-	com=num/delta
-	print(com)
 	pass
 
+#Ajustes de zoom, segun el boton seleccionado, se ajusta la posicion y la cantidad de zoom
 
 func _on_Button_pressed():
 	var camera = get_node("Camera2D")
@@ -40,11 +38,11 @@ func _on_Button3_pressed():
 	camera.zoom=Vector2(0.5,0.5)
 
 
-func _on_TouchScreenButton2_pressed():
+func _on_TouchScreenButton2_pressed(): #para cambiar de escena cuando se presiona el boton para ayuda
 	Transitions.fade_out(self, target, 1.5, Color.black)
 
 
-func _on_Button5_pressed():
+func _on_Button5_pressed(): #control de zoom con la combinacion ctrl + rueda del mouse
 	if Input.is_action_pressed("ctrl"):
 		var camera = get_node("Camera2D")
 		var zoom = camera.get_zoom()
